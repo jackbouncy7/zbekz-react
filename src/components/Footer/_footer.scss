@@ -1,0 +1,157 @@
+.footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #f4f8fb;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__box-wrapper {
+    display: flex;
+  }
+
+  .footer__box-wrapper .footer__box {
+    margin-left: 50px;
+  }
+
+  &__box {
+    &.first {
+      width: 100%;
+      max-width: 560px;
+      img {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__box {
+    strong {
+      display: block;
+      line-height: 30px;
+      margin-bottom: 30px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #3b566e;
+      letter-spacing: 0.69px;
+    }
+
+    li {
+      margin-bottom: 16px;
+    }
+
+    li i {
+      margin-right: 10px;
+      font-size: 14px;
+      color: #3b566e;
+    }
+
+    .footer__box-link {
+      position: relative;
+      font-size: 14px;
+      padding-bottom: 5px;
+      color: #6f8ba4;
+    }
+
+    .footer__box-link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #3498db;
+      transition: width 0.3s ease;
+    }
+
+    .footer__box-link:hover::after {
+      width: 100%;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.88px;
+      color: #6f8ba4;
+    }
+
+    .footer__social-links {
+      display: flex;
+    }
+  }
+
+  .footer__line {
+    margin-top: 30px;
+    border-top: 1px solid #dae6fd;
+  }
+
+  .footer__copyright {
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6f8ba4;
+    letter-spacing: 0.88px;
+  }
+}
+
+// RESPONSIVENESS
+@media only screen and (max-width: 1100px) {
+  .footer {
+    &__box {
+      &.first {
+        width: 100%;
+        max-width: 360px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 952px) {
+  .footer {
+    &__box {
+      &.first {
+        width: 100%;
+        max-width: 560px;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .footer__box-wrapper {
+      margin-top: 30px;
+      justify-content: space-between;
+    }
+
+    .footer__box-wrapper .footer__box {
+      margin-left: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .footer {
+    &__box {
+      strong {
+        margin-bottom: 18px;
+      }
+    }
+
+    .footer__box-wrapper {
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .footer__box-wrapper .footer__box {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}
