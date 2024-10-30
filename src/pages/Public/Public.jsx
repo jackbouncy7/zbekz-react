@@ -7,11 +7,11 @@ const Home = lazy(() => import("@pages/Home/Home"));
 // const AboutUs = lazy(() => import("@pages/AboutUs/AboutUs"));
 // const Services = lazy(() => import("@pages/Services/Services"));
 // const Contact = lazy(() => import("@pages/Contact/Contact"));
-// const Products = lazy(() => import("@pages/Products/Products"));
-// const ProductSingle = lazy(() => import("@pages/ProductSingle/ProductSingle"));
-// const ProductPrivacy = lazy(() =>
-//   import("@pages/ProductPrivacy/ProductPrivacy")
-// );
+const Products = lazy(() => import("@pages/Products/Products"));
+const ProductSingle = lazy(() => import("@pages/ProductSingle/ProductSingle"));
+const ProductPrivacy = lazy(() =>
+  import("@pages/ProductPrivacy/ProductPrivacy")
+);
 
 export const Public = () => {
   return (
@@ -32,16 +32,16 @@ export const Public = () => {
       >
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="*" element={<NotFoundError />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="*" element={<NotFoundError />} /> */}
+          {/* <Route path="/aboutus" element={<AboutUs />} /> */}
+          {/* <Route path="/services" element={<Services />} /> */}
+          {/* <Route path="/contact" element={<Contact />} /> */}
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductSingle />} />
           <Route
             path="/products/:id/privacy-policy"
             element={<ProductPrivacy />}
-          /> */}
+          />
         </Routes>
       </Suspense>
       {/* <Footer /> */}
