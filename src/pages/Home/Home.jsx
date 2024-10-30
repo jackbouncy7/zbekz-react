@@ -195,7 +195,7 @@ const Home = () => {
       {/* TEAM SECTION END */}
 
       {/* PARALLAX START */}
-      {/* <section className="parallax">
+      <section className="parallax">
         <div className="container">
           <div className="parallax__count">
             <div className="parallax__countItem">
@@ -216,9 +216,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       {/* PARALLAX END */}
       <h1>test</h1>
+      
       {/* <Footer /> */}
     </>
   );
