@@ -1,8 +1,8 @@
-.services {
+.servicesPage {
   margin-top: 100px;
   margin-bottom: 100px;
 
-  .services__boxes {
+  .servicesPage__boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -60,8 +60,8 @@
 
 // RESPONSIVENESS
 @media only screen and (max-width: 821px) {
-  .services {
-    .services__boxes {
+  .servicesPage {
+    .servicesPage__boxes {
       grid-template-columns: repeat(1, 1fr);
     }
 
