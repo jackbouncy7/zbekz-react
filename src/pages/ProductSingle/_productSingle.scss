@@ -1,0 +1,134 @@
+.product-single {
+  overflow-x: hidden;
+  margin-bottom: 100px;
+}
+
+.product-single__breadcrumb {
+  padding-top: 100px;
+}
+
+.product-single__breadcrumb-list {
+  display: flex;
+  padding-left: 0;
+
+  .product-single__breadcrumb-item {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .product-single__breadcrumb-item a {
+    color: #1614138f;
+
+    &:hover {
+      color: #000;
+    }
+
+    &::after {
+      content: "/";
+      margin: 0 15px;
+    }
+  }
+
+  .product-single__breadcrumb-item.active {
+    color: #000;
+  }
+}
+
+// Details
+.product-details {
+  margin-top: 70px;
+}
+
+.product-details__title {
+  font-size: 56px;
+  font-weight: 600;
+  color: #161413;
+  letter-spacing: -1px;
+  line-height: 55px;
+}
+
+.product-details__imageWrapper {
+  width: 100vw;
+  // height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin-top: 70px;
+}
+
+.product-details__imageWrapper img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+// Product items start
+.product-item {
+  margin-top: 70px;
+}
+
+.product-item__info-block {
+  width: 340px;
+}
+
+.product-item__info-block:nth-child(2) .product-item__headText {
+  margin-bottom: 10px;
+}
+
+.product-item__headText {
+  margin: 0;
+  margin-bottom: 2px;
+
+  font-size: 14px;
+  color: #1614138f;
+  font-weight: 500;
+}
+
+.product-item__val {
+  display: block;
+  margin-bottom: 24px;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.product-item__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-item__info-block:nth-child(3) img {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.product-item__clientTitle {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 56px;
+  font-weight: 600;
+  color: #161413;
+}
+
+.product-item__clientDescrWrapper {
+  width: 800px;
+}
+
+.product-item__clientSubtext {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.product-item__clientDescr {
+  font-size: 17px;
+  color: #423b38;
+
+  & p {
+    margin-bottom: 16px;
+  }
+}
