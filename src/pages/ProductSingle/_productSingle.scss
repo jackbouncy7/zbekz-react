@@ -1,5 +1,5 @@
 .product-single {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   margin-bottom: 100px;
 }
 
@@ -112,7 +112,8 @@
 }
 
 .product-item__clientDescrWrapper {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
 }
 
 .product-item__clientSubtext {
@@ -120,7 +121,7 @@
   margin-bottom: 20px;
 
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: #000;
 }
 
@@ -130,5 +131,60 @@
 
   & p {
     margin-bottom: 16px;
+  }
+}
+
+// RESPONSIVENESS
+@media only screen and (max-width: 1200px) {
+  .product-details__imageWrapper img {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 776px) {
+  .product-details__title {
+    font-size: 48px;
+  }
+
+  .product-item__wrapper {
+    display: block;
+  }
+
+  .product-item__info-block {
+    width: 100%;
+  }
+
+  .product-item__side {
+    margin-bottom: 40px;
+  }
+
+  .product-item__clientTitle {
+    font-size: 48px;
+  }
+
+  .product-item__clientSubtext  {
+    font-size: 18px;
+  }
+
+  .product-item__val {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .product-details {
+    margin-top: 50px;
+  }
+
+  .product-details__title {
+    font-size: 40px;
+  }
+
+  .product-details__imageWrapper img {
+    height: 200px;
+  }
+
+  .product-item__clientTitle {
+    font-size: 40px;
   }
 }
