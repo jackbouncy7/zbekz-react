@@ -75,3 +75,41 @@
   font-size: 15px;
   color: #423b38;
 }
+
+// RESPONSIVENESS
+@media only screen and (max-width: 776px) {
+  .privacy-single__breadcrumb-list {
+    flex-wrap: wrap;
+  }
+
+  .privacy-single__breadcrumb-item {
+    margin-bottom: 10px;
+  }
+
+  .privacy-details {
+    margin-top: 50px;
+  }
+
+  .privacy-details__title {
+    font-size: 48px;
+  }
+
+  .privacy-output {
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .privacy-output__res h1 {
+    font-size: 20px;
+  }
+
+  .privacy-output__res h3 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .privacy-details__title {
+    font-size: 40px;
+  }
+}
