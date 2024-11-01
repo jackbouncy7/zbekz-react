@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { db } from "../../firebase.js";
 import { doc, getDocs, collection, query, where } from "firebase/firestore";
 const Header = lazy(() => import("@components/Header/Header"));
+const Footer = lazy(() => import("@components/Footer/Footer"));
 import BgProduct from "@images/products/project1-detailed.png";
 import AppStoreLogo from "@images/download-apple-store.png";
 import PlayStoreLogo from "@images/download-google-play.png";
@@ -73,7 +74,7 @@ const ProductSingle = () => {
         </div>
 
         <div className="product-details__imageWrapper">
-          <img src={BgProduct} alt="product image" />
+          <img src={product?.imgList[1]?.img} alt="" />
         </div>
 
         {/* Product items start */}
@@ -138,6 +139,19 @@ const ProductSingle = () => {
         </div>
         {/* Product items end */}
       </section>
+
+      <section className="product-spotlight">
+        <div className="container">
+          <div className="product-spotlight__inner">
+            <div className="product-spotlight__wrapper">
+              <h3>Product spotlight</h3>
+              <p>Take a look at some of the apps we’ve built.</p>
+              <Link to="/products">View all products</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </>
   );
 };

@@ -6,5 +6,5 @@
 // Responsiveness ✅
 
 // Technologies
-// Contact page
-// Product page img render
+// Contact page ✅
+// Product page img render ✅❗

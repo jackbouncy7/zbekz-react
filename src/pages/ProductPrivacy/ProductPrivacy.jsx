@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { db } from "../../firebase.js";
 import { doc, getDocs, collection, query, where } from "firebase/firestore";
 const Header = lazy(() => import("@components/Header/Header"));
+const Footer = lazy(() => import("@components/Footer/Footer"));
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import "./_product-privacy.scss";
@@ -69,6 +70,7 @@ const ProductPrivacy = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

@@ -48,7 +48,14 @@ const Products = () => {
           ) : (
             products.map((product, index) => (
               <Link key={product.id} to={`/products/${product.id}`}>
-                <div className="products__box">
+                <div
+                  className="products__box"
+                  style={{
+                    backgroundImage: `url(${product.imgList[0]?.img})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "right",
+                  }}
+                >
                   <div className="products__content">
                     <h3 className="products__title--content">
                       {product?.name}
@@ -79,4 +86,3 @@ const Products = () => {
 };
 
 export default Products;
-
