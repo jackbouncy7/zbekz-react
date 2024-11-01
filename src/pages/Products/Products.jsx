@@ -79,9 +79,4 @@ const Products = () => {
 };
 
 export default Products;
-// Category ❗
-// Client from ✅
-// Hamburger menu ✅
-// privacy ✅
-// BG Img
-// Responsiveness
+

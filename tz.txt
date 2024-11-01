@@ -1,0 +1,10 @@
+// Category ❗
+// Client from ✅
+// Hamburger menu ✅
+// privacy ✅
+// BG Img ✅
+// Responsiveness ✅
+
+// Technologies
+// Contact page
+// Product page img render
