@@ -18,6 +18,7 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 .header-area.scrolled {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -36,15 +37,18 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 .header-area .main-nav .logo img {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 .header-area .main-nav .dark-logo {
   display: none;
 }
+
 .header-area .main-nav .nav {
   float: right;
   // margin-top: 30px;
@@ -53,10 +57,13 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 .header-area .main-nav .nav li {
   margin-left: 35px;
 }
+
 .header-area .main-nav .nav li a {
+  position: relative;
   display: block;
   font-weight: 600;
   font-size: 14px;
@@ -69,9 +76,33 @@ header
   line-height: 36px;
   border: transparent;
 }
+
+.header-area .main-nav .nav .main-nav__links {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+}
+
+.active {
+  color: #007bff; /* Active color */
+  font-weight: bold;
+}
+
+.header-area .main-nav .nav .main-nav__links:hover::after {
+  width: 100%;
+}
+
 .header-area .main-nav .nav li a:hover {
   color: #f7f8ff;
 }
+
 .header-area .main-nav .nav li a.btn-nav-line {
   border: 1px solid #fff;
   width: 140px;
@@ -86,10 +117,12 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 .header-area .main-nav .nav li a.btn-nav-line:hover {
   background: #fff;
   color: #4886ff;
 }
+
 .header-area .main-nav .menu-trigger {
   cursor: pointer;
   display: block;
@@ -102,6 +135,7 @@ header
   right: 40px;
   display: none;
 }
+
 .header-area .main-nav .menu-trigger span,
 .header-area .main-nav .menu-trigger span:before,
 .header-area .main-nav .menu-trigger span:after {
@@ -116,6 +150,7 @@ header
   height: 2px;
   left: 0;
 }
+
 .header-area .main-nav .menu-trigger span:before,
 .header-area .main-nav .menu-trigger span:after {
   -moz-transition: all 0.4s;
@@ -129,16 +164,20 @@ header
   height: 2px;
   left: 0;
 }
+
 .header-area .main-nav .menu-trigger span:after {
   width: 22px;
 }
+
 .header-area .main-nav .menu-trigger span:before,
 .header-area .main-nav .menu-trigger span:after {
   content: "";
 }
+
 .header-area .main-nav .menu-trigger span {
   top: 16px;
 }
+
 .header-area .main-nav .menu-trigger span:before {
   -moz-transform-origin: 33% 100%;
   -ms-transform-origin: 33% 100%;
@@ -147,6 +186,7 @@ header
   top: -10px;
   z-index: 10;
 }
+
 .header-area .main-nav .menu-trigger span:after {
   -moz-transform-origin: 33% 0;
   -ms-transform-origin: 33% 0;
@@ -154,12 +194,14 @@ header
   transform-origin: 33% 0;
   top: 10px;
 }
+
 .header-area .main-nav .menu-trigger.active span,
 .header-area .main-nav .menu-trigger.active span:before,
 .header-area .main-nav .menu-trigger.active span:after {
   background-color: transparent;
   width: 100%;
 }
+
 .header-area .main-nav .menu-trigger.active span:before {
   -moz-transform: translateY(6px) translateX(1px) rotate(45deg);
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
@@ -167,6 +209,7 @@ header
   transform: translateY(6px) translateX(1px) rotate(45deg);
   background-color: #3b566e;
 }
+
 .header-area .main-nav .menu-trigger.active span:after {
   -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
@@ -174,26 +217,33 @@ header
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
   background-color: #3b566e;
 }
+
 .header-area.header-sticky {
   background: #fff;
   height: 80px;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
 }
+
 .header-area.header-sticky .logo {
   margin-top: 22px;
 }
+
 .header-area.header-sticky .light-logo {
   display: none;
 }
+
 .header-area.header-sticky .nav {
   margin-top: 20px;
 }
+
 .header-area.header-sticky .nav li a {
   color: #3b566e;
 }
+
 .header-area.header-sticky .nav li a:hover {
   color: #3b566e;
 }
+
 .header-area.header-sticky .nav li a.btn-nav-line {
   border: 1px solid #4886ff;
   color: #4886ff;
@@ -275,6 +325,7 @@ header
     border-radius: 0px;
   }
 }
+
 @media (min-width: 992px) {
   .header-area .main-nav .nav {
     display: flex;

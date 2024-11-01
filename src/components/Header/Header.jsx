@@ -49,8 +49,9 @@ const Header = () => {
           <ul className={`nav ${isOpen ? "open" : ""}`}>
             <li>
               <Link
+                className="main-nav__links"
                 style={{
-                  color: switchHeader || scrolled ? "#3B566E" : "white",
+                  color: switchHeader || scrolled ? "#3B566E" : "",
                 }}
                 to="/"
               >
@@ -59,8 +60,9 @@ const Header = () => {
             </li>
             <li>
               <Link
+                className="main-nav__links"
                 style={{
-                  color: switchHeader || scrolled ? "#3B566E" : "white",
+                  color: switchHeader || scrolled ? "#3B566E" : "",
                 }}
                 to="/products"
               >
@@ -69,8 +71,9 @@ const Header = () => {
             </li>
             <li>
               <Link
+                className="main-nav__links"
                 style={{
-                  color: switchHeader || scrolled ? "#3B566E" : "white",
+                  color: switchHeader || scrolled ? "#3B566E" : "",
                 }}
                 to="/aboutus"
               >
@@ -79,8 +82,9 @@ const Header = () => {
             </li>
             <li>
               <Link
+                className="main-nav__links"
                 style={{
-                  color: switchHeader || scrolled ? "#3B566E" : "white",
+                  color: switchHeader || scrolled ? "#3B566E" : "",
                 }}
                 to="/services"
               >
