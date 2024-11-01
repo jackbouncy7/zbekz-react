@@ -1,4 +1,4 @@
-import LogoDark from "@images/logo-dark.svg";
+import LogoDark from "@images/logo.svg";
 import "./_footer.scss";
 
 const Footer = () => {

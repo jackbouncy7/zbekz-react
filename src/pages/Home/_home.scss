@@ -16,8 +16,8 @@
 
   background-image: linear-gradient(
       127deg,
-      rgba(56, 77, 255, 0.8) 0%,
-      rgba(36, 205, 255, 0.8) 91%
+      rgba(0, 136, 204, 0.8) 0%,
+      rgba(254, 127, 45, 0.8) 91%
     ),
     url("../../../public/assets/images/welcome.jpg");
 
@@ -416,6 +416,7 @@
   position: relative;
   background: url("../../../public/assets/images/parallax.jpg") center no-repeat;
   background-attachment: fixed;
+  background-size: 100%;
 
   &::before {
     content: "";

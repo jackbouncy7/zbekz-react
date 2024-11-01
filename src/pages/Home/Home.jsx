@@ -30,13 +30,13 @@ const Home = () => {
         <div className="container">
           <div className="hero__overlay">
             <div className="hero__content">
-              <h1>Check out our mobile apps we're working on.</h1>
+              <h1>Where Your Mobile App Dreams Take Shape.</h1>
               <p>
-                We design and develop mobile apps that delight your users and
-                grow your business. Enterprise-grade development combined with
-                outstanding design.
+                Our enterprise-level development meets award-winning design to
+                bring your mobile vision to life, captivating users and fueling
+                measurable business success.
               </p>
-              <Link to="/products">ALL WORKS</Link>
+              <Link to="/products">ALL PRODUCTS</Link>
             </div>
             <div className="hero__icons">
               <img src={img1png} alt="App Icon 1" />

@@ -2,8 +2,8 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
-import Logo from "@images/logo-white.svg";
-import LogoDarkHeader from "@images/logo-dark.svg";
+import Logo from "@images/logo-dark.svg";
+import LogoDarkHeader from "@images/logo.svg";
 import "./_header.scss";
 
 const Header = () => {
@@ -44,9 +44,15 @@ const Header = () => {
             <img
               src={switchHeader || scrolled ? LogoDarkHeader : Logo}
               className="light-logo"
+              width={125}
               alt="Beapp"
             />
-            <img src={LogoDarkHeader} className="dark-logo" alt="Beapp" />
+            <img
+              src={LogoDarkHeader}
+              className="dark-logo"
+              width={125}
+              alt="Beapp"
+            />
           </Link>
           <ul className={`nav ${isOpen ? "open" : ""}`}>
             <li>
