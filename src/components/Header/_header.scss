@@ -90,9 +90,9 @@ header
   }
 }
 
-.active {
-  color: #007bff; /* Active color */
-  font-weight: bold;
+.header-area .main-nav .nav .main-nav__links.active {
+  border-bottom: 2px solid #dcdbdb;
+  font-weight: 700;
 }
 
 .header-area .main-nav .nav .main-nav__links:hover::after {

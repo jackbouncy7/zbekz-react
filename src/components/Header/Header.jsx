@@ -1,5 +1,7 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+
 import Logo from "@images/logo-white.svg";
 import LogoDarkHeader from "@images/logo-dark.svg";
 import "./_header.scss";
@@ -48,7 +50,7 @@ const Header = () => {
           </Link>
           <ul className={`nav ${isOpen ? "open" : ""}`}>
             <li>
-              <Link
+              <NavLink
                 className="main-nav__links"
                 style={{
                   color: switchHeader || scrolled ? "#3B566E" : "",
@@ -56,10 +58,10 @@ const Header = () => {
                 to="/"
               >
                 HOME
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 className="main-nav__links"
                 style={{
                   color: switchHeader || scrolled ? "#3B566E" : "",
@@ -67,10 +69,10 @@ const Header = () => {
                 to="/products"
               >
                 PRODUCTS
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 className="main-nav__links"
                 style={{
                   color: switchHeader || scrolled ? "#3B566E" : "",
@@ -78,10 +80,10 @@ const Header = () => {
                 to="/aboutus"
               >
                 ABOUT US
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 className="main-nav__links"
                 style={{
                   color: switchHeader || scrolled ? "#3B566E" : "",
@@ -89,7 +91,7 @@ const Header = () => {
                 to="/services"
               >
                 SERVICES
-              </Link>
+              </NavLink>
             </li>
             {/* <li> */}
             {/*   <a style={{ color: scrolled ? '#3B566E' : 'white' }} href="blog.html">BLOG</a> */}
