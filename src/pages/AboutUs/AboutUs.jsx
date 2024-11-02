@@ -22,12 +22,11 @@ const AboutUs = () => {
         <div className="container">
           <div className="about-us__gallery">
             <p>
-              Proin pellentesque quam at quam aliquet, eget mattis quam euismod.
-              Curabitur imperdiet suscipit facilisis. Maecenas diam quam,
-              sodales eu est eu, posuere ultricies augue. Sed rhoncus facilisis
-              risus, nec sagittis dui luctus in. Nunc eget ante odio.
-              Suspendisse eu diam ut nisi ullamcorper interdum. Pellentesque sit
-              amet quam risus.
+              We craft mobile applications that blend innovative design with
+              user-centered functionality. From concept to launch, we align
+              every detail with our clients’ visions and user needs. Our
+              commitment to excellence ensures each app is built with precision,
+              creating impactful, engaging experiences.
             </p>
             <div className="about-us__images">
               <img
@@ -56,14 +55,11 @@ const AboutUs = () => {
               />
             </div>
             <p>
-              Quisque quis faucibus tellus, non tincidunt urna. Pellentesque
-              faucibus aliquet mi, id efficitur nisl aliquam at. Phasellus
-              volutpat lobortis consectetur. Duis efficitur iaculis ipsum ut
-              sodales. Phasellus suscipit lectus eget sapien accumsan, vitae
-              auctor magna suscipit. Ut sagittis mauris auctor dictum feugiat.
-              Duis lectus neque, aliquet quis justo euismod, rutrum vehicula
-              felis. In luctus dui nec pretium gravida. In mauris lorem,
-              accumsan sit amet lacinia non, auctor id dui.
+              We focus on innovation and quality in each project to deliver
+              mobile apps that meet the highest standards and exceed user
+              expectations. With our expertise in design, development, and
+              strategy, we aim to turn your ideas into successful mobile
+              experiences that resonate with users and drive business success.
             </p>
           </div>
         </div>

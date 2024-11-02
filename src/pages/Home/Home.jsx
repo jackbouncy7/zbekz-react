@@ -4,11 +4,11 @@ import Header from "@components/Header/Header";
 import Footer from "@components/Footer/Footer";
 const Team = lazy(() => import("@components/Team/Team"));
 // import BgBottom from "@images/bg-bottom.svg";
-import img1png from "@images/1.png";
-import img2png from "@images/2.png";
-import img3png from "@images/3.png";
-import img4png from "@images/4.png";
-import img5png from "@images/5.png";
+import img1png from "@images/easy_exchange.svg";
+import img2png from "@images/inomarket_logo.svg";
+import img3png from "@images/karly_icon.svg";
+import img4png from "@images/quranic_calm.svg";
+import img5png from "@images/tashkent_metro.svg";
 import img6png from "@images/6.png";
 import img7png from "@images/7.png";
 import img8png from "@images/8.png";
@@ -39,14 +39,30 @@ const Home = () => {
               <Link to="/products">ALL PRODUCTS</Link>
             </div>
             <div className="hero__icons">
-              <img src={img1png} alt="App Icon 1" />
-              <img src={img2png} alt="App Icon 2" />
-              <img src={img3png} alt="App Icon 3" />
-              <img src={img4png} alt="App Icon 4" />
-              <img src={img5png} alt="App Icon 5" />
-              <img src={img6png} alt="App Icon 6" />
-              <img src={img7png} alt="App Icon 7" />
-              <img src={img8png} alt="App Icon 8" />
+              <a href="/products">
+                <img src={img1png} alt="Easy Exchange product Zbekz icon" />
+              </a>
+              <a href="/products">
+                <img src={img2png} alt="InoMarket product Zbekz icon" />
+              </a>
+              <a href="/products">
+                <img src={img3png} alt="Karly product Zbekz icon" />
+              </a>
+              <a href="/products">
+                <img src={img4png} alt="Quranic calm product Zbekz icon" />
+              </a>
+              <a href="/products">
+                <img src={img5png} alt="Tashkent Metro product Zbekz icon" />
+              </a>
+              <a href="/products">
+                <img src={img6png} alt="App Icon 6" />
+              </a>
+              <a href="/products">
+                <img src={img7png} alt="App Icon 7" />
+              </a>
+              <a href="/products">
+                <img src={img8png} alt="App Icon 8" />
+              </a>
             </div>
           </div>
         </div>
