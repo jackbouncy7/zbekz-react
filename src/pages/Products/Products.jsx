@@ -31,7 +31,6 @@ const Products = () => {
 
     fetchProducts();
   }, []);
-  console.log(products);
 
   return (
     <>
