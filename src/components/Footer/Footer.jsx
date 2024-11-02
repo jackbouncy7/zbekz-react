@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer__wrapper">
             <div className="footer__box first">
-              <img src={LogoDark} alt="Footer Logo" />
+              <img className="footer__logo" src={LogoDark} alt="Footer Logo" />
               <p>
                 We specialize in crafting mobile applications that enhance user
                 engagement and drive business growth. Our team is committed to

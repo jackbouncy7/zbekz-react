@@ -79,8 +79,17 @@
     }
 
     .footer__social-links {
+      margin-top: 10px;
       display: flex;
     }
+
+    .footer__social-links i {
+      font-size: 17px;
+    }
+  }
+
+  &__box.address p {
+    margin-bottom: 5px;
   }
 
   .footer__line {
