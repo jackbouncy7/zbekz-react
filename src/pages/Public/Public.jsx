@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 // const Header = lazy(() => import("@components/Header/Header"));
 // const Footer = lazy(() => import("@components/Footer/Footer"));
+import Logo from "@images/logo-dark.svg";
 const Home = lazy(() => import("@pages/Home/Home"));
 // const NotFoundError = lazy(() => import("@pages/404/404"));
 const AboutUs = lazy(() => import("@pages/AboutUs/AboutUs"));
@@ -20,6 +21,7 @@ export const Public = () => {
       <Suspense
         fallback={
           <div className="loader-wrapper">
+            <img src={Logo} alt="" />
             <div className="center">
               <div className="dot dot-one"></div>
               <div className="dot dot-two"></div>
