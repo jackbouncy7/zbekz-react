@@ -71,22 +71,26 @@ const Products = () => {
                         ))}
                       </span>
                       <div className="product__downloads">
-                        <a href={product?.appstore}>
-                          <img
-                            src={AppStoreLogo}
-                            width={120}
-                            height={40}
-                            alt="product download link"
-                          />
-                        </a>
-                        <a href={product?.playmarket}>
-                          <img
-                            src={PlayStoreLogo}
-                            width={120}
-                            height={40}
-                            alt="product download link"
-                          />
-                        </a>
+                        {product?.appstore && (
+                          <a href={product?.appstore}>
+                            <img
+                              src={AppStoreLogo}
+                              width={120}
+                              height={40}
+                              alt="product download link"
+                            />
+                          </a>
+                        )}
+                        {product?.playmarket && (
+                          <a href={product?.playmarket}>
+                            <img
+                              src={PlayStoreLogo}
+                              width={120}
+                              height={40}
+                              alt="product download link"
+                            />
+                          </a>
+                        )}
                       </div>
                       <div className="products__button-link">
                         <Link
