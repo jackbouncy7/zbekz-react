@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 // const Footer = lazy(() => import("@components/Footer/Footer"));
 import Logo from "@images/logo-dark.svg";
 const Home = lazy(() => import("@pages/Home/Home"));
-// const NotFoundError = lazy(() => import("@pages/404/404"));
+const NotFoundError = lazy(() => import("@pages/404/404"));
 const AboutUs = lazy(() => import("@pages/AboutUs/AboutUs"));
 const Services = lazy(() => import("@pages/Services/Services"));
 const Contact = lazy(() => import("@pages/Contact/Contact"));
@@ -34,7 +34,7 @@ export const Public = () => {
       >
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="*" element={<NotFoundError />} /> */}
+          <Route path="*" element={<NotFoundError />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
