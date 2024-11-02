@@ -12,8 +12,9 @@ const Team = () => {
           <div className="team__wrapper">
             <h1>Our Team</h1>
             <p>
-              Fusce placerat pretium mauris, vel sollicitudin elit lacinia
-              vitae. Quisque sit amet nisi erat.
+              We are a dedicated group of professionals passionate about
+              creating exceptional mobile experiences. Together, we strive to
+              innovate and exceed expectations.
             </p>
           </div>
 
@@ -27,8 +28,8 @@ const Team = () => {
                 </div>
               </div>
               <p className="team__descr">
-                Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
-                justo. Sed at lorem malesuada.
+                Fletch excels in developing strategies that align product
+                features with market needs.
               </p>
               <ul className="team__social">
                 <li>
@@ -63,8 +64,8 @@ const Team = () => {
                 </div>
               </div>
               <p className="team__descr">
-                Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
-                justo. Sed at lorem malesuada.
+                Lance specializes in crafting stunning visual designs that
+                enhance usability.
               </p>
               <ul className="team__social">
                 <li>
@@ -99,8 +100,7 @@ const Team = () => {
                 </div>
               </div>
               <p className="team__descr">
-                Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
-                justo. Sed at lorem malesuada.
+                Valentino is skilled in building robust Android applications.
               </p>
               <ul className="team__social">
                 <li>
@@ -135,8 +135,8 @@ const Team = () => {
                 </div>
               </div>
               <p className="team__descr">
-                Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at
-                justo. Sed at lorem malesuada.
+                Giles develops high-quality iOS apps, emphasizing user
+                satisfaction.
               </p>
               <ul className="team__social">
                 <li>

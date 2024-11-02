@@ -58,15 +58,16 @@ const Home = () => {
         <div className="container">
           <div className="services__details">
             <div className="services__titles">
-              <h1>Start-to-end app development agency</h1>
+              <h1>Comprehensive App Development Solutions</h1>
               <p>
-                Pellentesque posuere vestibulum lorem, ut efficitur erat
-                tristique sed. Ut vitae tincidunt ante.
+                We take pride in guiding your app from concept to launch,
+                ensuring seamless functionality and user satisfaction throughout
+                the entire development process.
               </p>
               <p>
-                Donec vulputate urna sed rutrum venenatis. Cras consequat magna
-                quis arcu elementum, quis congue risus volutpat. Praesent tortor
-                nulla, ullamcorper.
+                Our team focuses on building high-quality applications that
+                engage users effectively while also delivering reliable
+                performance and meeting your business goals.
               </p>
               <Link to="/services">SERVICES</Link>
             </div>
@@ -75,8 +76,8 @@ const Home = () => {
                 <i className="fa fa-clone"></i>
                 <h2>Mobility Services Strategy</h2>
                 <p>
-                  Morbi pharetra sapien ut mattis viverra. Curabitur sit amet
-                  mattis.
+                  Customized strategies designed to elevate your mobile app's
+                  success and reach.
                 </p>
               </div>
 
@@ -84,8 +85,8 @@ const Home = () => {
                 <i className="fab fa-connectdevelop"></i>
                 <h2>Native App Development</h2>
                 <p>
-                  Morbi pharetra sapien ut mattis viverra. Curabitur sit amet
-                  mattis.
+                  Expertly crafted native applications that maximize the
+                  strengths of each platform.
                 </p>
               </div>
 
@@ -93,8 +94,8 @@ const Home = () => {
                 <i className="fa fa-object-ungroup"></i>
                 <h2>Design & User Experience</h2>
                 <p>
-                  Morbi pharetra sapien ut mattis viverra. Curabitur sit amet
-                  mattis.
+                  Focused on creating visually appealing and user-friendly
+                  interfaces that captivate users.
                 </p>
               </div>
 
@@ -102,8 +103,8 @@ const Home = () => {
                 <i className="fa fa-line-chart"></i>
                 <h2>Maintenance & Monitoring</h2>
                 <p>
-                  Morbi pharetra sapien ut mattis viverra. Curabitur sit amet
-                  mattis.
+                  Dedicated support to keep your app secure, updated, and
+                  performing at its best.
                 </p>
               </div>
             </div>
@@ -133,9 +134,9 @@ const Home = () => {
                     Design and UX that ensures your app will be loved and used
                   </h3>
                   <p>
-                    Quisque nec consectetur arcu. Duis tellus ante, sodales sed
-                    molestie at, sagittis id neque. Quisque condimentum libero
-                    arcu. Mauris tellus sem, ultrices varius nisl at.
+                    Our design approach focuses on user engagement, creating
+                    interfaces that are both intuitive and visually appealing,
+                    ensuring a memorable experience for your users.
                   </p>
                 </div>
               </li>
@@ -150,9 +151,9 @@ const Home = () => {
                     Enterprise-grade development secures reliability and quality
                   </h3>
                   <p>
-                    Quisque nec consectetur arcu. Duis tellus ante, sodales sed
-                    molestie at, sagittis id neque. Quisque condimentum libero
-                    arcu. Mauris tellus sem, ultrices varius nisl at.
+                    With industry-standard development practices, we build apps
+                    that are stable, secure, and optimized to handle high
+                    performance demands across various platforms.
                   </p>
                 </div>
               </li>
@@ -164,9 +165,9 @@ const Home = () => {
                 <div className="steps__content">
                   <h3> A proven and tested process guarantees your success</h3>
                   <p>
-                    Quisque nec consectetur arcu. Duis tellus ante, sodales sed
-                    molestie at, sagittis id neque. Quisque condimentum libero
-                    arcu. Mauris tellus sem, ultrices varius nisl at.
+                    We follow a systematic approach to app development, with
+                    each stage meticulously tested to reduce risks and increase
+                    efficiency, ensuring successful project delivery.
                   </p>
                 </div>
               </li>
@@ -178,9 +179,9 @@ const Home = () => {
                 <div className="steps__content">
                   <h3> Start-to-end app development agency</h3>
                   <p>
-                    Quisque nec consectetur arcu. Duis tellus ante, sodales sed
-                    molestie at, sagittis id neque. Quisque condimentum libero
-                    arcu. Mauris tellus sem, ultrices varius nisl at.
+                    From initial concept to final deployment, we provide
+                    complete app development services, guiding you through each
+                    phase to bring your vision to life.
                   </p>
                 </div>
               </li>

@@ -10,9 +10,9 @@ const Footer = () => {
             <div className="footer__box first">
               <img src={LogoDark} alt="Footer Logo" />
               <p>
-                Morbi convallis bibendum urna ut viverra. Maecenas quis
-                consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi
-                ultricies laoreet ullamcorper phasellus semper.
+                We specialize in crafting mobile applications that enhance user
+                engagement and drive business growth. Our team is committed to
+                delivering solutions tailored to your needs.
               </p>
             </div>
             <div className="footer__box-wrapper">
@@ -21,25 +21,25 @@ const Footer = () => {
                 <ul>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="#">
+                    <a className="footer__box-link" href="/products">
                       Products
                     </a>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="#">
+                    <a className="footer__box-link" href="/aboutus">
                       About Us
                     </a>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="#">
+                    <a className="footer__box-link" href="/services">
                       Services
                     </a>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="#">
+                    <a className="footer__box-link" href="/contact">
                       Contact
                     </a>
                   </li>
@@ -50,66 +50,77 @@ const Footer = () => {
                 <ul>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="#">
-                      Dance School
+                    <a className="footer__box-link" href="/products">
+                      InoMarket
                     </a>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="#">
-                      Coiner
+                    <a className="footer__box-link" href="/products">
+                      Karly
                     </a>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="#">
-                      Cloud Manager
+                    <a className="footer__box-link" href="/products">
+                      Tashkent Metro
                     </a>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="#">
-                      Coding Life
+                    <a className="footer__box-link" href="/products">
+                      Quranic Calm
                     </a>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="#">
-                      Smart Office
+                    <a className="footer__box-link" href="/products">
+                      EasyExchange
                     </a>
                   </li>
                 </ul>
               </div>
               <div className="footer__box address">
                 <strong>Contact Us</strong>
-                <p>455 West Orchard Street</p>
-                <p>Kings Mountain, NC 28086</p>
-                <p>Phone: (272) 211-7370</p>
+                <p>Chilanzar District, Choponota Street, 6</p>
+                <p>Tashkent, Uzbekistan</p>
                 <p>
-                  E-Mail:{" "}
-                  <a href="mailto:support@yourbrand.com">
-                    support@yourbrand.com
-                  </a>{" "}
+                  Phone: <a href="tel:+998974334331">+998 (97) 433-43-31</a>
+                </p>
+                <p>
+                  E-Mail: <a href="mailto:bekzod@zbekz.com">bekzod@zbekz.com</a>{" "}
                 </p>
                 <ul className="footer__social-links">
                   <li>
-                    <a href="">
-                      <i className="fab fa-facebook"></i>
+                    <a
+                      target="_blank"
+                      href="https://www.upwork.com/agencies/zbekz/"
+                    >
+                      <i className="fab fa-upwork"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/company/zbekz-group"
+                    >
                       <i className="fab fa-linkedin"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="">
-                      <i className="fab fa-github"></i>
+                    <a
+                      target="_blank"
+                      href="https://m.facebook.com/zbekzgroup/"
+                    >
+                      <i className="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/zbekzgroup/"
+                    >
+                      <i className="fab fa-instagram"></i>
                     </a>
                   </li>
                 </ul>
@@ -119,7 +130,7 @@ const Footer = () => {
 
           <hr className="footer__line" />
           <small className="footer__copyright">
-            © 2024 Zbekz group. All Rights Reserved.
+            © 2024 ZBEKZ GROUP. All Rights Reserved.
           </small>
         </div>
       </footer>

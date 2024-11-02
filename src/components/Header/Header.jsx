@@ -45,12 +45,14 @@ const Header = () => {
               src={switchHeader || scrolled ? LogoDarkHeader : Logo}
               className="light-logo"
               width={125}
+              height="40px"
               alt="Beapp"
             />
             <img
               src={LogoDarkHeader}
               className="dark-logo"
               width={125}
+              height="40px"
               alt="Beapp"
             />
           </Link>
