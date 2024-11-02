@@ -7,6 +7,8 @@ const Footer = lazy(() => import("@components/Footer/Footer"));
 import "./_products.scss";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import AppStoreLogo from "@images/download-apple-store.png";
+import PlayStoreLogo from "@images/download-google-play.png";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -69,8 +71,24 @@ const Products = () => {
                           </span>
                         ))}
                       </span>
-                      {/* <span className='products__category'>Finance</span> */}
-                      {/* <span className='products__country'>US</span> */}
+                      <div className="product__downloads">
+                        <a href={product?.appstore}>
+                          <img
+                            src={AppStoreLogo}
+                            width={120}
+                            height={40}
+                            alt="product download link"
+                          />
+                        </a>
+                        <a href={product?.playmarket}>
+                          <img
+                            src={PlayStoreLogo}
+                            width={120}
+                            height={40}
+                            alt="product download link"
+                          />
+                        </a>
+                      </div>
                       <div className="products__button-link">
                         <Link
                           className="products__link"
