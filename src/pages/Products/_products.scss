@@ -36,7 +36,11 @@
 }
 
 .products__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: end; // temporary, occured after min height
   width: 600px;
+  min-height: 303px;
   padding: 40px;
 
   width: 100%;
