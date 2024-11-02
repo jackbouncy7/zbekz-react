@@ -93,8 +93,8 @@ const Contact = () => {
             </div>
             <form action="" method="POST">
               <div className="form-inner">
-                <input type="text" placeholder="Name, surname" name="name" />
-                <input type="email" placeholder="E-Mail" name="email" />
+                <input type="text" placeholder="Name, surname" name="name" required />
+                <input type="email" placeholder="E-Mail" name="email" required />
               </div>
               <textarea placeholder="Your message" name="textare"></textarea>
               <button type="submit">SEND</button>
