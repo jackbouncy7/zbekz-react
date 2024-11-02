@@ -1,9 +1,15 @@
+.product__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+  margin-top: 70px;
+}
+
 .products__box {
   display: flex;
   align-items: end;
   width: 100%;
-  margin-top: 70px;
-  margin-bottom: 70px;
   height: 568px;
 
   background-image: url("/assets/images/products/project1.png");
@@ -32,6 +38,10 @@
 .products__content {
   width: 600px;
   padding: 40px;
+
+  width: 100%;
+  border-radius: 32px;
+  background: rgba(22, 20, 19, 0.698);
 }
 
 .products__title--content {
@@ -41,8 +51,8 @@
   color: #fff;
 }
 
-.products__content span {
-  margin-right: 10px;
+.products__content .products__device-tag {
+  margin-right: 9px;
   padding: 4px 12px;
 
   font-size: 14px;
@@ -81,8 +91,14 @@
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .product__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media only screen and (max-width: 500px) {
-  .products__box {
+  .product__grid {
     margin-top: 40px;
   }
 
