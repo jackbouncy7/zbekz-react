@@ -95,30 +95,38 @@ const ProductSingle = () => {
                 </div>
 
                 <div className="product-item__info-block">
-                  <p className="product-item__headText">Available on</p>
+                  {(product?.appstore || product?.playmarket) && (
+                    <p className="product-item__headText">Available on</p>
+                  )}
                   <span className="product-item__val">
-                    <a href={product?.appstore} target="_blank">
-                      <img
-                        src={AppStoreLogo}
-                        width="150"
-                        alt="app store logo"
-                      />
-                    </a>
-                    <a href={product?.playmarket} target="_blank">
-                      <img
-                        src={PlayStoreLogo}
-                        width="150"
-                        height="50"
-                        alt="play store logo"
-                      />
-                    </a>
+                    {product?.appstore && (
+                      <a href={product?.appstore} target="_blank">
+                        <img
+                          src={AppStoreLogo}
+                          width="150"
+                          alt="app store logo"
+                        />
+                      </a>
+                    )}
+                    {product?.playmarket && (
+                      <a href={product?.playmarket} target="_blank">
+                        <img
+                          src={PlayStoreLogo}
+                          width="150"
+                          height="50"
+                          alt="play store logo"
+                        />
+                      </a>
+                    )}
                   </span>
-                  <span>
-                    © ZBEKZ GROUP |{" "}
-                    <Link to={`/products/${product?.id}/privacy-policy`}>
-                      Privacy Policy
-                    </Link>{" "}
-                  </span>
+                  {product?.terms && (
+                    <span>
+                      © ZBEKZ GROUP |{" "}
+                      <Link to={`/products/${product?.id}/privacy-policy`}>
+                        Privacy Policy
+                      </Link>{" "}
+                    </span>
+                  )}
                 </div>
               </div>
               <div className="product-item__side">
