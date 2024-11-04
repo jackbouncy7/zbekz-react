@@ -82,6 +82,7 @@ const Products = () => {
                                 width={120}
                                 height={40}
                                 alt="product download link"
+                                onClick={(event) => event.stopPropagation()}
                               />
                             </a>
                           )}
@@ -92,6 +93,7 @@ const Products = () => {
                                 width={120}
                                 height={40}
                                 alt="product download link"
+                                onClick={(event) => event.stopPropagation()}
                               />
                             </a>
                           )}
