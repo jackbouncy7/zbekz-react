@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import CallActionPic from "@images/home-call-to-action.png";
 import "./_call-to-action.scss";
 
 const CallToAction = () => {
