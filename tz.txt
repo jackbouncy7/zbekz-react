@@ -5,7 +5,7 @@
 // BG Img ✅
 // Responsiveness ✅
 
-// Technologies ?
+// Technologies 
 // We'd love to help ✅
 // Contact page ✅
 // Product page img render ✅❗
