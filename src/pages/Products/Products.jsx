@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { db } from "../../firebase.js";
 import { collection, getDocs } from "firebase/firestore";
 const Header = lazy(() => import("@components/Header/Header"));
-import CalltoAction from "@components/CalltoAction/CalltoAction";
+import CallToAction from "@components/CalltoAction/CallToAction";
 const Testimonials = lazy(() =>
   import("@components/Testimonials/Testimonials")
 );
@@ -117,7 +117,7 @@ const Products = () => {
           </div>
         </div>
       </section>
-      <CalltoAction/>
+      <CallToAction/>
       <Testimonials />
       <Footer />
     </>

@@ -2,7 +2,7 @@ import { lazy } from "react";
 const HeroParallax = lazy(() =>
   import("@components/HeroParallax/HeroParallax")
 );
-import CalltoAction from "@components/CalltoAction/CalltoAction";
+import CallToAction from "@components/CalltoAction/CallToAction";
 const Footer = lazy(() => import("@components/Footer/Footer"));
 import "./_services.scss";
 
@@ -98,7 +98,7 @@ const Services = () => {
         </div>
       </div>
 
-      <CalltoAction />
+      <CallToAction />
       <Footer />
     </>
   );

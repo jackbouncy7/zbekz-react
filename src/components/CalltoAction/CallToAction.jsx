@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./_call-to-action.scss";
 
-const CalltoAction = () => {
+const CallToAction = () => {
   return (
     <>
       <div className="call-action">
@@ -21,4 +21,4 @@ const CalltoAction = () => {
   );
 };
 
-export default CalltoAction;
+export default CallToAction;
