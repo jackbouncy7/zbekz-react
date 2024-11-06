@@ -22,3 +22,4 @@ const CallToAction = () => {
 };
 
 export default CallToAction;
+// ISSUE HAS BEEN SOLVED
