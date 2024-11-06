@@ -238,8 +238,8 @@ const Home = () => {
       </section>
       {/* PARALLAX END */}
 
-      <Testimonials />
       <CallToAction />
+      <Testimonials />
       <Footer />
     </>
   );
