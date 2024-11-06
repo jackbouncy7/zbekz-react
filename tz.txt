@@ -6,6 +6,6 @@
 // Responsiveness ✅
 
 // Technologies
-// We'd love to help - aurox
+// We'd love to help ✅
 // Contact page ✅
 // Product page img render ✅❗
