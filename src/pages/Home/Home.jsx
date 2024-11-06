@@ -2,7 +2,7 @@ import { lazy } from "react";
 import { Link } from "react-router-dom";
 import Header from "@components/Header/Header";
 import Testimonials from "@components/Testimonials/Testimonials";
-import CallToAction from "@components/CalltoAction/CalltoAction";
+import CalltoAction from "@components/CalltoAction/CalltoAction";
 import Footer from "@components/Footer/Footer";
 const Team = lazy(() => import("@components/Team/Team"));
 // import BgBottom from "@images/bg-bottom.svg";
@@ -238,7 +238,7 @@ const Home = () => {
       </section>
       {/* PARALLAX END */}
 
-      <CallToAction />
+      <CalltoAction />
       <Testimonials />
       <Footer />
     </>

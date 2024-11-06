@@ -3,7 +3,7 @@ import { lazy } from "react";
 const HeroParallax = lazy(() =>
   import("@components/HeroParallax/HeroParallax")
 );
-import CallToAction from "@components/CalltoAction/CalltoAction";
+import CalltoAction from "@components/CalltoAction/CalltoAction";
 import Testimonials from "@components/Testimonials/Testimonials";
 const Footer = lazy(() => import("@components/Footer/Footer"));
 const Team = lazy(() => import("@components/Team/Team"));
@@ -82,7 +82,7 @@ const AboutUs = () => {
       </section>
       {/* INNER PARALLAX END */}
       <Team />
-      <CallToAction/>
+      <CalltoAction/>
       <Testimonials/>
       <Footer />
     </>
