@@ -1,0 +1,96 @@
+.call-action {
+  margin-top: 70px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    // max-height: 144px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f7f7f7, #e4e4e4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  &__background {
+    background-image: url("../../../public/assets/images/home-call-to-action.png");
+    width: 100%;
+    max-width: 280px;
+    height: 144px;
+    background-size: cover;
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px;
+    height: 144px;
+
+    span {
+      font-size: 24px;
+      color: #161413;
+      font-weight: 600;
+      letter-spacing: -0.48px;
+    }
+
+    a {
+      width: 150px;
+      height: 45px;
+      line-height: 45px;
+      color: #4886ff;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 1px;
+      border: 1px solid #4886ff;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      text-align: center;
+
+      &:hover {
+        background: #4886ff;
+        color: #fff;
+      }
+    }
+  }
+
+  &__itemsTextWrapper {
+    width: 256px;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .call-action {
+    &__background {
+      width: 0;
+      background-image: none;
+    }
+
+    &__items {
+      flex-wrap: wrap;
+      height: 100%;
+      padding: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 504px) {
+  .call-action {
+    &__items {
+      span {
+        font-size: 20px;
+      } 
+
+      a {
+        margin-top: 20px;
+      }
+    }
+  }
+}
