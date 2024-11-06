@@ -3,7 +3,7 @@ import { lazy } from "react";
 const HeroParallax = lazy(() =>
   import("@components/HeroParallax/HeroParallax")
 );
-import CallToAction from "@components/CalltoAction/CalltoAction";
+import CallToAction from "@components/CalltoAction/CallToAction";
 import Testimonials from "@components/Testimonials/Testimonials";
 const Footer = lazy(() => import("@components/Footer/Footer"));
 const Team = lazy(() => import("@components/Team/Team"));
