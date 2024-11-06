@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { db } from "../../firebase.js";
 import { collection, getDocs } from "firebase/firestore";
 const Header = lazy(() => import("@components/Header/Header"));
+const Testimonials = lazy(() =>
+  import("@components/Testimonials/Testimonials")
+);
 const Footer = lazy(() => import("@components/Footer/Footer"));
 import "./_products.scss";
 import Skeleton from "react-loading-skeleton";
@@ -113,6 +116,7 @@ const Products = () => {
           </div>
         </div>
       </section>
+      <Testimonials />
       <Footer />
     </>
   );
