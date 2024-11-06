@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CallActionPic from "@images/home-call-to-action.png";
 import "./_call-to-action.scss";
 
@@ -12,7 +13,7 @@ const CallToAction = () => {
               <div className="call-action__itemsTextWrapper">
                 <span>We'd love to help bring your next idea to life.</span>
               </div>
-              <a href="/contact">Contact us</a>
+              <Link to="/contact">Contact us</Link>
             </div>
           </div>
         </div>

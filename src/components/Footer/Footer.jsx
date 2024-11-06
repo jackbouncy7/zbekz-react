@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LogoDark from "@images/logo.svg";
 import "./_footer.scss";
 
@@ -21,27 +22,27 @@ const Footer = () => {
                 <ul>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="/products">
+                    <Link className="footer__box-link" to="/products">
                       Products
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="/aboutus">
+                    <Link className="footer__box-link" to="/aboutus">
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="/services">
+                    <Link className="footer__box-link" to="/services">
                       Services
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="/contact">
+                    <Link className="footer__box-link" to="/contact">
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -50,33 +51,33 @@ const Footer = () => {
                 <ul>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="/products">
+                    <Link className="footer__box-link" to="/products">
                       InoMarket
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="/products">
+                    <Link className="footer__box-link" to="/products">
                       Karly
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="/products">
+                    <Link className="footer__box-link" to="/products">
                       Tashkent Metro
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="/products">
+                    <Link className="footer__box-link" to="/products">
                       Quranic Calm
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <a className="footer__box-link" href="/products">
+                    <Link className="footer__box-link" to="/products">
                       EasyExchange
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
