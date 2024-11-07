@@ -64,7 +64,7 @@ const Products = () => {
                       style={{
                         backgroundImage: `url(${product.imgList[0]?.img})`,
                         backgroundSize: "cover",
-                        backgroundPosition: "right",
+                        backgroundPosition: "center",
                       }}
                     >
                       <div className="products__content">
@@ -117,7 +117,7 @@ const Products = () => {
           </div>
         </div>
       </section>
-      <CallToAction/>
+      <CallToAction />
       <Testimonials />
       <Footer />
     </>

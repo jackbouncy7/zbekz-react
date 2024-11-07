@@ -71,10 +71,10 @@ const ProductSingle = () => {
             </div>
           </div>
           {/* Details end */}
-        </div>
 
         <div className="product-details__imageWrapper">
           <img src={product?.imgList[1]?.img} alt="" />
+        </div>
         </div>
 
         {/* Product items start */}
