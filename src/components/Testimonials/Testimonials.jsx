@@ -1,40 +1,78 @@
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Logo from "@images/testimonials-owner-logo.svg";
 import TestimonialsOwn from "@images/testimonials-owner.webp";
 import "./_testimonials.scss";
 
 const Testimonials = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <>
       <div className="testimonials">
         <div className="container">
           <h1 className="testimonials__title">Our clients say it better</h1>
-          <div className="testimonials__wrapper">
-            <img
-              className="testimonials__logo"
-              src={Logo}
-              width={170}
-              height={80}
-              alt="client brand"
-            />
-            <p className="testimonials__text">
-              The ZBEKZ GROUP team was always accommodating to our needs and
-              very flexible which is crucial for any startup or a new product
-              being created. We felt like the developers were a part of our team
-              while we worked together which was incredibly important to us.
-            </p>
-            <div className="testimonials__owner">
+          <Slider {...settings}>
+            <div className="testimonials__wrapper">
               <img
-                src={TestimonialsOwn}
-                width={72}
-                height={72}
-                alt="testimonials writer"
+                className="testimonials__logo"
+                src={Logo}
+                width={170}
+                height={80}
+                alt="client brand"
               />
-              <div className="testimonials__ownerItems">
-                <p>Spencer Dennis</p>
-                <span>Co-founder & CEO, Liquid Barcodes, US</span>
+              <p className="testimonials__text">
+                The ZBEKZ GROUP team was always accommodating to our needs and
+                very flexible which is crucial for any startup or a new product
+                being created. We felt like the developers were a part of our
+                team while we worked together which was incredibly important to
+                us.
+              </p>
+              <div className="testimonials__owner">
+                <img
+                  src={TestimonialsOwn}
+                  width={72}
+                  height={72}
+                  alt="testimonials writer"
+                />
+                <div className="testimonials__ownerItems">
+                  <p>Spencer Dennis</p>
+                  <span>Co-founder & CEO, Liquid Barcodes, US</span>
+                </div>
               </div>
             </div>
-          </div>
+            <div className="testimonials__wrapper">
+              <img
+                className="testimonials__logo"
+                src={Logo}
+                width={170}
+                height={80}
+                alt="client brand"
+              />
+              <p className="testimonials__text">
+                The ZBEKZ GROUP team was always accommodating to our needs and
+                very flexible which is crucial for any startup or a new product.
+              </p>
+              <div className="testimonials__owner">
+                <img
+                  src={TestimonialsOwn}
+                  width={72}
+                  height={72}
+                  alt="testimonials writer"
+                />
+                <div className="testimonials__ownerItems">
+                  <p>Akbar Dennis</p>
+                  <span>Co-founder & CEO, Liquid Barcodes, US</span>
+                </div>
+              </div>
+            </div>
+          </Slider>
         </div>
       </div>
     </>
