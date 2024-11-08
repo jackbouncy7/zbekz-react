@@ -3,7 +3,7 @@ const HeroParallax = lazy(() =>
   import("@components/HeroParallax/HeroParallax")
 );
 import Testimonials from "@components/Testimonials/Testimonials";
-const Footer = lazy(() => import("@components/Footer/Footer"));
+import Footer from "@components/Footer/Footer";
 import "./_contact.scss";
 
 const Contact = () => {

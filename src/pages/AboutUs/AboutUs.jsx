@@ -5,7 +5,7 @@ const HeroParallax = lazy(() =>
 );
 import CallToAction from "@components/CalltoAction/CallToAction";
 import Testimonials from "@components/Testimonials/Testimonials";
-const Footer = lazy(() => import("@components/Footer/Footer"));
+import Footer from "@components/Footer/Footer";
 const Team = lazy(() => import("@components/Team/Team"));
 import About1 from "@images/about/1_1.jpg";
 import About2 from "@images/about/2_1.jpg";
@@ -82,8 +82,8 @@ const AboutUs = () => {
       </section>
       {/* INNER PARALLAX END */}
       <Team />
-      <CallToAction/>
-      <Testimonials/>
+      <CallToAction />
+      <Testimonials />
       <Footer />
     </>
   );

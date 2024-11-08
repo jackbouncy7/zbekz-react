@@ -2,8 +2,8 @@ import { lazy, useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { db } from "../../firebase.js";
 import { doc, getDocs, collection, query, where } from "firebase/firestore";
-const Header = lazy(() => import("@components/Header/Header"));
-const Footer = lazy(() => import("@components/Footer/Footer"));
+import Header from "@components/Header/Header";
+import Footer from "@components/Footer/Footer";
 import BgProduct from "@images/products/project1-detailed.png";
 import AppStoreLogo from "@images/download-apple-store.png";
 import PlayStoreLogo from "@images/download-google-play.png";
@@ -72,9 +72,9 @@ const ProductSingle = () => {
           </div>
           {/* Details end */}
 
-        <div className="product-details__imageWrapper">
-          <img src={product?.imgList[1]?.img} alt="" />
-        </div>
+          <div className="product-details__imageWrapper">
+            <img src={product?.imgList[1]?.img} alt="" />
+          </div>
         </div>
 
         {/* Product items start */}
