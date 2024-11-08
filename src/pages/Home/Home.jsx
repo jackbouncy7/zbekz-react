@@ -12,8 +12,6 @@ import img3png from "@images/karly_icon.svg";
 import img4png from "@images/quranic_calm.svg";
 import img5png from "@images/tashkent_metro.svg";
 import img6png from "@images/6.png";
-import img7png from "@images/7.png";
-import img8png from "@images/8.png";
 // import WelcomeBg from "@images/welcome.jpg";
 import HomeMockup from "@images/home-mockup.png";
 // import Blog1 from "@images/1_1.jpg";
@@ -58,12 +56,6 @@ const Home = () => {
               </a>
               <a href="/products">
                 <img src={img6png} alt="App Icon 6" />
-              </a>
-              <a href="/products">
-                <img src={img7png} alt="App Icon 7" />
-              </a>
-              <a href="/products">
-                <img src={img8png} alt="App Icon 8" />
               </a>
             </div>
           </div>
