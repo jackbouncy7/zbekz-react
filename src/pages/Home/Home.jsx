@@ -131,6 +131,7 @@ const Home = () => {
               <img
                 src={HomeMockup}
                 alt="Mockup of home screen for app design process"
+                width={432}
               />
             </div>
             <ul className="steps__list">
