@@ -11,7 +11,7 @@ import img2png from "@images/inomarket_logo.svg";
 import img3png from "@images/karly_icon.svg";
 import img4png from "@images/quranic_calm.svg";
 import img5png from "@images/tashkent_metro.svg";
-import img6png from "@images/innobot.png";
+import img6png from "@images/innobot.jpg";
 // import WelcomeBg from "@images/welcome.jpg";
 import HomeMockup from "@images/home-mockup.png";
 // import Blog1 from "@images/1_1.jpg";
