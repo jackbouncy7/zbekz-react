@@ -1,5 +1,7 @@
-import { lazy } from "react";
+import React, { lazy, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { db } from "../../firebase.js";
+import { collection, getDocs } from "firebase/firestore";
 import Header from "@components/Header/Header";
 import Testimonials from "@components/Testimonials/Testimonials";
 import CallToAction from "@components/CalltoAction/CallToAction";
@@ -21,6 +23,24 @@ import HomeMockup from "@images/home-mockup.png";
 import "./_home.scss";
 
 const Home = () => {
+  const [numbers, setNumbers] = useState([]);
+
+  useEffect(() => {
+    const fetchNumbers = async () => {
+      try {
+        const response = await getDocs(collection(db, "statistics"));
+        const numberList = response.docs.map((doc) => ({
+          ...doc.data(),
+        }));
+        setNumbers(numberList);
+      } catch (error) {
+        console.error("Error fetching numbers:", error);
+      }
+    };
+
+    fetchNumbers();
+  }, []);
+
   return (
     <>
       <Header />
@@ -210,22 +230,28 @@ const Home = () => {
       <section className="parallax">
         <div className="container">
           <div className="parallax__count">
-            <div className="parallax__countItem">
-              <span>126</span>
-              <p>Mobile App Complete</p>
-            </div>
-            <div className="parallax__countItem">
-              <span>76</span>
-              <p>Happy Customer</p>
-            </div>
-            <div className="parallax__countItem">
-              <span>176</span>
-              <p>App Version</p>
-            </div>
-            <div className="parallax__countItem">
-              <span>16</span>
-              <p>Award Win</p>
-            </div>
+            {numbers.map((num, index) => {
+              return (
+                <React.Fragment key={index}>
+                  <div className="parallax__countItem">
+                    <span>{num?.mobile_app_complete}</span>
+                    <p>Mobile App Complete</p>
+                  </div>
+                  <div className="parallax__countItem">
+                    <span>{num?.happy_customer}</span>
+                    <p>Happy Customer</p>
+                  </div>
+                  <div className="parallax__countItem">
+                    <span>{num?.app_version}</span>
+                    <p>App Version</p>
+                  </div>
+                  <div className="parallax__countItem">
+                    <span>{num?.award_win}</span>
+                    <p>Award Win</p>
+                  </div>
+                </React.Fragment>
+              );
+            })}
           </div>
         </div>
       </section>

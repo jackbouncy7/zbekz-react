@@ -10,13 +10,12 @@ const Team = () => {
     const fetchTeams = async () => {
       try {
         const response = await getDocs(collection(db, "team"));
-        console.log(response);
         const teamList = response.docs.map((doc) => ({
           ...doc.data(),
         }));
         setTeams(teamList);
       } catch (error) {
-        console.error("Error fetching products:", error);
+        console.error("Error fetching teams:", error);
       }
     };
 
