@@ -33,22 +33,22 @@ const Team = () => {
               </p>
               <ul className="team__social">
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-linkedin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
@@ -69,22 +69,22 @@ const Team = () => {
               </p>
               <ul className="team__social">
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-linkedin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
@@ -104,22 +104,22 @@ const Team = () => {
               </p>
               <ul className="team__social">
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-linkedin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
@@ -140,22 +140,22 @@ const Team = () => {
               </p>
               <ul className="team__social">
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-linkedin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="/">
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
