@@ -1,6 +1,9 @@
+// 1. React Imports
 import React from "react";
-import imgerr from "@images/404.svg";
 import { Link } from "react-router-dom";
+
+// 2. Media Imports, styles
+import imgerr from "@images/404.svg";
 
 const NotFoundError = () => {
   return (

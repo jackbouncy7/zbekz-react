@@ -1,10 +1,14 @@
+// 1. React Imports
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+
+// 2. Media Imports, styles
 import { db } from "../../firebase.js";
 import { doc, getDocs, collection, query, where } from "firebase/firestore";
+
 import Header from "@components/Header/Header";
 import Footer from "@components/Footer/Footer";
-import Skeleton from "react-loading-skeleton";
+
 import "react-loading-skeleton/dist/skeleton.css";
 import "./_product-privacy.scss";
 

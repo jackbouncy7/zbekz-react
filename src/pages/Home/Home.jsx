@@ -1,20 +1,23 @@
+// 1. React Imports
 import React, { lazy, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
+// 2. Media Imports, styles
 import { db } from "../../firebase.js";
 import { collection, getDocs } from "firebase/firestore";
+
+const Team = lazy(() => import("@components/Team/Team"));
 import Header from "@components/Header/Header";
 import Testimonials from "@components/Testimonials/Testimonials";
 import CallToAction from "@components/CalltoAction/CallToAction";
 import Footer from "@components/Footer/Footer";
-const Team = lazy(() => import("@components/Team/Team"));
-// import BgBottom from "@images/bg-bottom.svg";
+
 import img1png from "@images/easy_exchange.svg";
 import img2png from "@images/inomarket_logo.svg";
 import img3png from "@images/karly_icon.svg";
 import img4png from "@images/quranic_calm.svg";
 import img5png from "@images/tashkent_metro.svg";
 import img6png from "@images/innobot.jpg";
-// import WelcomeBg from "@images/welcome.jpg";
 import HomeMockup from "@images/home-mockup.png";
 // import Blog1 from "@images/1_1.jpg";
 // import Blog2 from "@images/2_1.jpg";

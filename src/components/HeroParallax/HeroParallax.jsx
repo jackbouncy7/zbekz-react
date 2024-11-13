@@ -1,5 +1,8 @@
+// 1. React Imports
 import { lazy } from "react";
 import { Link } from "react-router-dom";
+
+// 2. Media Imports, styles
 const Header = lazy(() => import("@components/Header/Header"));
 import "./_hero-parallax.scss";
 

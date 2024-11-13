@@ -1,4 +1,7 @@
+// 1. React Imports
 import { useEffect, useState } from "react";
+
+// 2. Media Imports, styles
 import { db } from "../../firebase.js";
 import { collection, getDocs } from "firebase/firestore";
 import "./_team.scss";

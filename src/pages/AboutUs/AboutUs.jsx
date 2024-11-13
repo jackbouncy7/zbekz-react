@@ -1,18 +1,21 @@
+// 1. React Imports
 import { lazy } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+// 2. Media Imports, styles
 const HeroParallax = lazy(() =>
   import("@components/HeroParallax/HeroParallax")
 );
+const Team = lazy(() => import("@components/Team/Team"));
 import CallToAction from "@components/CalltoAction/CallToAction";
 import Testimonials from "@components/Testimonials/Testimonials";
 import Footer from "@components/Footer/Footer";
-const Team = lazy(() => import("@components/Team/Team"));
+
 import About1 from "@images/about/1_1.jpg";
 import About2 from "@images/about/2_1.jpg";
 import About3 from "@images/about/3_1.jpg";
 import About4 from "@images/about/4_1.jpg";
 import "./_about-us.scss";
-import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (

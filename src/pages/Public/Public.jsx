@@ -1,8 +1,8 @@
+// 1. React Imports
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-// const Header = lazy(() => import("@components/Header/Header"));
-// const Footer = lazy(() => import("@components/Footer/Footer"));
-import Logo from "@images/logo-dark.svg";
+
+// 2. Component, Page Imports
 const Home = lazy(() => import("@pages/Home/Home"));
 const NotFoundError = lazy(() => import("@pages/404/404"));
 const AboutUs = lazy(() => import("@pages/AboutUs/AboutUs"));
@@ -13,6 +13,8 @@ const ProductSingle = lazy(() => import("@pages/ProductSingle/ProductSingle"));
 const ProductPrivacy = lazy(() =>
   import("@pages/ProductPrivacy/ProductPrivacy")
 );
+
+import Logo from "@images/logo-dark.svg";
 
 export const Public = () => {
   return (

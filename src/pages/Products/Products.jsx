@@ -1,18 +1,23 @@
+// 1. React Imports
 import { lazy, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
+// 2. Media Imports, styles
 import { db } from "../../firebase.js";
 import { collection, getDocs } from "firebase/firestore";
+
 import Header from "@components/Header/Header";
 import CallToAction from "@components/CalltoAction/CallToAction";
 const Testimonials = lazy(() =>
   import("@components/Testimonials/Testimonials")
 );
 import Footer from "@components/Footer/Footer";
-import "./_products.scss";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
+
 import AppStoreLogo from "@images/download-apple-store.png";
 import PlayStoreLogo from "@images/download-google-play.png";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+import "./_products.scss";
 
 const Products = () => {
   const [products, setProducts] = useState([]);

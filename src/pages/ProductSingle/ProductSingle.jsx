@@ -1,15 +1,19 @@
+// 1. React Imports
 import { lazy, useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+
+// 2. Media Imports, styles
 import { db } from "../../firebase.js";
 import { doc, getDocs, collection, query, where } from "firebase/firestore";
+
 import Header from "@components/Header/Header";
 import Footer from "@components/Footer/Footer";
-import BgProduct from "@images/products/project1-detailed.png";
+
 import AppStoreLogo from "@images/download-apple-store.png";
 import PlayStoreLogo from "@images/download-google-play.png";
-import "./_productSingle.scss";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import "./_productSingle.scss";
 
 const ProductSingle = () => {
   const { id } = useParams();

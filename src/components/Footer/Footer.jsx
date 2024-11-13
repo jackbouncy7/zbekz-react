@@ -1,4 +1,7 @@
+// 1. React Imports
 import { Link } from "react-router-dom";
+
+// 2. Media Imports, styles
 import LogoDark from "@images/logo.svg";
 import "./_footer.scss";
 

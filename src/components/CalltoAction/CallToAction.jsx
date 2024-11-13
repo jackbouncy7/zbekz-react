@@ -1,4 +1,7 @@
+// 1. React Imports
 import { Link } from "react-router-dom";
+
+//  2. Style Imports
 import "./_call-to-action.scss";
 
 const CallToAction = () => {

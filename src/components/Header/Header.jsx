@@ -1,7 +1,9 @@
+// 1. React Imports
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
+// 2. Media Imports, styles
 import Logo from "@images/logo-dark.svg";
 import LogoDarkHeader from "@images/logo.svg";
 import "./_header.scss";

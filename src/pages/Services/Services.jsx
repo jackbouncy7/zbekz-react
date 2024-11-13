@@ -1,9 +1,13 @@
+// 1. React Imports
 import { lazy } from "react";
+
+// 2. Media Imports, styles
 const HeroParallax = lazy(() =>
   import("@components/HeroParallax/HeroParallax")
 );
 import CallToAction from "@components/CalltoAction/CallToAction";
 import Footer from "@components/Footer/Footer";
+
 import "./_services.scss";
 
 const Services = () => {
