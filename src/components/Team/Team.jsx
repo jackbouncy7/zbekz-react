@@ -58,26 +58,34 @@ const Team = () => {
                   dangerouslySetInnerHTML={{ __html: team?.description }}
                 ></p>
                 <ul className="team__social">
-                  <li>
-                    <a target="_blank" href={team.facebook}>
-                      <i className="fab fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a target="_blank" href={team.instagram}>
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a target="_blank" href={team.linkedin}>
-                      <i className="fab fa-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a target="_blank" href={team.github}>
-                      <i className="fab fa-github"></i>
-                    </a>
-                  </li>
+                  {team.facebook && (
+                    <li>
+                      <a target="_blank" href={team.facebook}>
+                        <i className="fab fa-facebook"></i>
+                      </a>
+                    </li>
+                  )}
+                  {team.instagram && (
+                    <li>
+                      <a target="_blank" href={team.instagram}>
+                        <i className="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                  )}
+                  {team.linkedin && (
+                    <li>
+                      <a target="_blank" href={team.linkedin}>
+                        <i className="fab fa-linkedin"></i>
+                      </a>
+                    </li>
+                  )}
+                  {team.github && (
+                    <li>
+                      <a target="_blank" href={team.github}>
+                        <i className="fab fa-github"></i>
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </li>
             ))}

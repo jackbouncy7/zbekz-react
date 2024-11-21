@@ -17,6 +17,10 @@
     flex-direction: column;
     justify-content: center !important;
     align-items: start !important;
+
+    .testimonials__logo {
+      object-fit: cover;
+    }
   }
 
   &__text {
