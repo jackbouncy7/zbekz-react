@@ -18,7 +18,7 @@ const Contact = () => {
         <div className="contact__wrapper">
           <iframe
             className="contact__canvas"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11992.825637716109!2d69.2096763!3d41.282612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5b81ef1e9bb%3A0x164bb2ef267efb27!2sZBEKZ%20GROUP!5e0!3m2!1sru!2s!4v1730552885063!5m2!1sru!2s"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11992.825637716109!2d69.2096763!3d41.282612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5b81ef1e9bb%3A0x164bb2ef267efb27!2sZBEKZ%20GROUP!5e0!3m2!1sru!2s!4v1730552885063!5m2!1sen!2s"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

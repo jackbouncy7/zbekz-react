@@ -91,11 +91,16 @@
     }
 
     &__content {
+      text-align: center;
       margin: 0 auto;
       margin-top: 30px;
       margin-bottom: 30px;
       h1 {
         font-size: 26px;
+      }
+
+      a {
+        margin: 0 auto;
       }
     }
 

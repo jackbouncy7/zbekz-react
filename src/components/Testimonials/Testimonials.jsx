@@ -61,12 +61,14 @@ const Testimonials = () => {
                   dangerouslySetInnerHTML={{ __html: testimonial?.description }}
                 ></p>
                 <div className="testimonials__owner">
-                  <img
-                    src={testimonial.imgList[1]?.img}
-                    width={72}
-                    height={72}
-                    alt="testimonials writer"
-                  />
+                  {testimonial.imgList[1]?.img && (
+                    <img
+                      src={testimonial.imgList[1]?.img}
+                      width={72}
+                      height={72}
+                      alt="testimonials writer"
+                    />
+                  )}
                   <div className="testimonials__ownerItems">
                     <p>{testimonial?.name}</p>
                     <span>{testimonial.jobtitle}</span>

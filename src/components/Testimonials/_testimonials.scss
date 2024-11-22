@@ -37,12 +37,9 @@
     align-items: center;
 
     & img {
+      margin-right: 20px;
       border-radius: 50%;
     }
-  }
-
-  &__ownerItems {
-    margin-left: 20px;
   }
 
   &__ownerItems p {

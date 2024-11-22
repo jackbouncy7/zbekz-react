@@ -208,6 +208,7 @@
 .product-spotlight__inner {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .product-spotlight__wrapper {
@@ -230,6 +231,7 @@
     display: block;
     width: 225px;
     height: 45px;
+    margin: 0 auto;
     line-height: 45px;
     color: #4886ff;
     font-weight: 600;
