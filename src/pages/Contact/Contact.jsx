@@ -86,7 +86,11 @@ const Contact = () => {
                 assistance, reach out to us, and we’ll get back to you soon.
               </p>
             </div>
-            <form action="" method="POST">
+            <form
+              action="mailto:enhancer83@gmail.com"
+              method="POST"
+              encType="text/plain"
+            >
               <div className="form-inner">
                 <input
                   type="text"
@@ -101,7 +105,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              <textarea placeholder="Your message" name="textare"></textarea>
+              <textarea placeholder="Your message" name="textarea"></textarea>
               <button type="submit">SEND</button>
             </form>
           </div>
