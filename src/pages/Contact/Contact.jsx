@@ -1,5 +1,5 @@
 // 1. React Imports
-import { lazy } from "react";
+import { lazy, useState } from "react";
 
 // 2. Media Imports, styles
 const HeroParallax = lazy(() =>
@@ -7,9 +7,37 @@ const HeroParallax = lazy(() =>
 );
 import Testimonials from "@components/Testimonials/Testimonials";
 import Footer from "@components/Footer/Footer";
+import emailjs from "@emailjs/browser";
 import "./_contact.scss";
 
 const Contact = () => {
+  const [isSent, setIsSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_h1muvgi",
+        "template_44yow7v",
+        e.target,
+        "kXdZ05kkfIeyUSA_C"
+      )
+      .then(
+        (result) => {
+          console.log("Success", result.text);
+          setIsSent(true);
+          alert(
+            "We have received your submission and will get back to you soon!"
+          );
+          e.target.reset();
+        },
+        (error) => {
+          console.log("Error", error.text);
+        }
+      );
+  };
+
   return (
     <>
       <HeroParallax title="Contact Us" />
@@ -87,26 +115,30 @@ const Contact = () => {
               </p>
             </div>
             <form
-              action="mailto:enhancer83@gmail.com"
+              // action="mailto:enhancer83@gmail.com"
               method="POST"
-              encType="text/plain"
+              onSubmit={sendEmail}
             >
               <div className="form-inner">
                 <input
                   type="text"
                   placeholder="Name, surname"
-                  name="name"
+                  name="name_from"
                   required
                 />
                 <input
                   type="email"
                   placeholder="E-Mail"
-                  name="email"
+                  name="email_from"
                   required
                 />
               </div>
-              <textarea placeholder="Your message" name="textarea"></textarea>
-              <button type="submit">SEND</button>
+              <textarea placeholder="Your message" name="message"></textarea>
+              {isSent ? (
+                <button type="submit">SENT🚀</button>
+              ) : (
+                <button type="submit">SEND</button>
+              )}
             </form>
           </div>
         </div>
