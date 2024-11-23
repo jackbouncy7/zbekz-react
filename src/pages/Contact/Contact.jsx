@@ -27,9 +27,9 @@ const Contact = () => {
         (result) => {
           console.log("Success", result.text);
           setIsSent(true);
-          alert(
-            "We have received your submission and will get back to you soon!"
-          );
+          // alert(
+          //   "We have received your submission and will get back to you soon!"
+          // );
           e.target.reset();
         },
         (error) => {
@@ -135,7 +135,16 @@ const Contact = () => {
               </div>
               <textarea placeholder="Your message" name="message"></textarea>
               {isSent ? (
-                <button type="submit">SENT🚀</button>
+                <button
+                  type="submit"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(127deg, rgba(0, 136, 204, 0.8) 0%, rgba(254, 127, 45, 0.8) 91%)",
+                    color: "white",
+                  }}
+                >
+                  SENT ✔️
+                </button>
               ) : (
                 <button type="submit">SEND</button>
               )}
