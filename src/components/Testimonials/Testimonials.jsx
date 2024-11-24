@@ -32,7 +32,7 @@ const Testimonials = () => {
     fetchTestimonial();
   }, []);
 
-  console.log(testimonials);
+  // console.log(testimonials);
 
   var settings = {
     dots: true,
