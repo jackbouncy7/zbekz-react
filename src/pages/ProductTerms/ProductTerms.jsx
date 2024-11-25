@@ -10,7 +10,7 @@ import Header from "@components/Header/Header";
 import Footer from "@components/Footer/Footer";
 
 import "react-loading-skeleton/dist/skeleton.css";
-import "./producy-terms.scss";
+import "./product-terms.scss";
 
 const ProductTerms = () => {
   const { router } = useParams();
