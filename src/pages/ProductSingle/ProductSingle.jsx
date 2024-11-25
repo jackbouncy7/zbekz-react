@@ -16,12 +16,12 @@ import "react-loading-skeleton/dist/skeleton.css";
 import "./_productSingle.scss";
 
 const ProductSingle = () => {
-  const { id } = useParams();
+  const { router } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const fetchProduct = async () => {
-    const q = query(collection(db, "products"), where("id", "==", id));
+    const q = query(collection(db, "products"), where("router", "==", router));
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
       setProduct(doc.data());
@@ -31,7 +31,7 @@ const ProductSingle = () => {
 
   useEffect(() => {
     fetchProduct();
-  }, [id]);
+  }, [router]);
 
   // console.log('OBJECT', product)
 
@@ -123,12 +123,24 @@ const ProductSingle = () => {
                       </a>
                     )}
                   </span>
-                  {product?.terms && (
+                  <p>© ZBEKZ GROUP</p>
+                  {(product?.privacypolicy || product?.terms) && (
                     <span>
-                      © ZBEKZ GROUP |{" "}
-                      <Link to={`/products/${product?.id}/privacy-policy`}>
-                        Privacy Policy
-                      </Link>{" "}
+                      {product.privacypolicy && (
+                        <Link
+                          to={`/products/${product?.router}/privacy-policy`}
+                        >
+                          Privacy Policy
+                        </Link>
+                      )}
+                      {product.privacypolicy && product.terms && " | "}
+                      {product?.terms && (
+                        <Link
+                          to={`/products/${product?.router}/terms-of-service`}
+                        >
+                          Terms of Service
+                        </Link>
+                      )}
                     </span>
                   )}
                 </div>

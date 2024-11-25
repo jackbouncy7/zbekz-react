@@ -13,6 +13,7 @@ const ProductSingle = lazy(() => import("@pages/ProductSingle/ProductSingle"));
 const ProductPrivacy = lazy(() =>
   import("@pages/ProductPrivacy/ProductPrivacy")
 );
+const ProductTerms = lazy(() => import("@pages/ProductTerms/ProductTerms"));
 
 import Logo from "@images/logo-dark.svg";
 
@@ -41,10 +42,14 @@ export const Public = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/:id" element={<ProductSingle />} />
+          <Route path="/products/:router" element={<ProductSingle />} />
           <Route
-            path="/products/:id/privacy-policy"
+            path="/products/:router/privacy-policy"
             element={<ProductPrivacy />}
+          />
+          <Route
+            path="/products/:router/terms-of-service"
+            element={<ProductTerms />}
           />
         </Routes>
       </Suspense>

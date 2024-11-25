@@ -62,7 +62,7 @@ const Home = () => {
               <Link to="/products">ALL PRODUCTS</Link>
             </div>
             <div className="hero__icons">
-              <a href="/products">
+              <a href="/products/easyexchange-convert">
                 <img src={img1png} alt="Easy Exchange product Zbekz icon" />
               </a>
               <a href="/products">

@@ -41,6 +41,8 @@ const Products = () => {
     fetchProducts();
   }, []);
 
+  console.log(products)
+
   return (
     <>
       <Header />
@@ -63,7 +65,7 @@ const Products = () => {
                     />
                   ))
               : products.map((product, index) => (
-                  <Link key={product.id} to={`/products/${product.id}`}>
+                  <Link key={product.id} to={`/products/${product.router}`}>
                     <div
                       className="products__box"
                       style={{
@@ -110,7 +112,7 @@ const Products = () => {
                         <div className="products__button-link">
                           <Link
                             className="products__link"
-                            to={`/products/${product.id}`}
+                            to={`/products/${product.router}`}
                           >
                             Explore more <i className="fa fa-arrow-right"></i>{" "}
                           </Link>

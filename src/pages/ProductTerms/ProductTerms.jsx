@@ -10,22 +10,22 @@ import Header from "@components/Header/Header";
 import Footer from "@components/Footer/Footer";
 
 import "react-loading-skeleton/dist/skeleton.css";
-import "./_product-privacy.scss";
+import "./producy-terms.scss";
 
-const ProductPrivacy = () => {
+const ProductTerms = () => {
   const { router } = useParams();
-  const [privacyContent, setPrivacyContent] = useState("");
+  const [termsContent, setTermsContent] = useState("");
 
-  const fetchPrivacy = async () => {
+  const fetchTerms = async () => {
     const q = query(collection(db, "products"), where("router", "==", router));
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
-      setPrivacyContent(doc.data());
+      setTermsContent(doc.data());
     });
   };
 
   useEffect(() => {
-    fetchPrivacy();
+    fetchTerms();
   }, [router]);
 
   // console.log('OBJECT', privacyContent)
@@ -45,15 +45,15 @@ const ProductPrivacy = () => {
                 <Link to="/products">Products</Link>
               </li>
               <li className="privacy-single__breadcrumb-item">
-                <Link to={`/products/${privacyContent?.router}`}>
-                  {privacyContent?.name}
+                <Link to={`/products/${termsContent?.router}`}>
+                  {termsContent?.name}
                 </Link>
               </li>
               <li
                 className="privacy-single__breadcrumb-item active"
                 aria-current="page"
               >
-                Privacy Policy
+                Terms of Service
               </li>
             </ol>
           </nav>
@@ -61,7 +61,7 @@ const ProductPrivacy = () => {
           {/* Details start */}
           <div className="privacy-details">
             <div className="privacy-details__titleWrapper">
-              <h2 className="privacy-details__title">Privacy Policy</h2>
+              <h2 className="privacy-details__title">Terms of Service</h2>
             </div>
           </div>
           {/* Details end */}
@@ -69,7 +69,9 @@ const ProductPrivacy = () => {
           <div className="privacy-output">
             <p
               className="privacy-output__res"
-              dangerouslySetInnerHTML={{ __html: privacyContent?.privacypolicy }}
+              dangerouslySetInnerHTML={{
+                __html: termsContent?.terms,
+              }}
             />
           </div>
         </div>
@@ -79,4 +81,4 @@ const ProductPrivacy = () => {
   );
 };
 
-export default ProductPrivacy;
+export default ProductTerms;

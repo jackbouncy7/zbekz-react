@@ -78,7 +78,10 @@ const Footer = () => {
                   </li>
                   <li>
                     <i className="fa fa-angle-right"></i>
-                    <Link className="footer__box-link" to="/products">
+                    <Link
+                      className="footer__box-link"
+                      to="/products/easyexchange-convert"
+                    >
                       EasyExchange
                     </Link>
                   </li>
