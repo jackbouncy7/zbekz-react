@@ -51,6 +51,10 @@ export const Public = () => {
             path="/products/:router/terms-of-service"
             element={<ProductTerms />}
           />
+          <Route
+            path="/products/:router/download"
+            element={<ProductSingle />}
+          />
         </Routes>
       </Suspense>
       {/* <Footer /> */}

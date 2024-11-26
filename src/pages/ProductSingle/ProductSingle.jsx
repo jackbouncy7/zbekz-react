@@ -5,6 +5,7 @@ import { Link, useParams } from "react-router-dom";
 // 2. Media Imports, styles
 import { db } from "../../firebase.js";
 import { doc, getDocs, collection, query, where } from "firebase/firestore";
+import { useLocation } from "react-router-dom";
 
 import Header from "@components/Header/Header";
 import Footer from "@components/Footer/Footer";
@@ -20,6 +21,8 @@ const ProductSingle = () => {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  const location = useLocation();
+
   const fetchProduct = async () => {
     const q = query(collection(db, "products"), where("router", "==", router));
     const querySnapshot = await getDocs(q);
@@ -34,6 +37,25 @@ const ProductSingle = () => {
   }, [router]);
 
   // console.log('OBJECT', product)
+
+  useEffect(() => {
+    if (product?.playmarket || product?.appstore) {
+      const redirectUser = () => {
+        const userAgent =
+          navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(userAgent)) {
+          window.location.href = product.playmarket;
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+          window.location.href = product.appstore;
+        }
+      };
+
+      if (location.pathname === `/products/${product.router}/download`) {
+        redirectUser();
+      }
+    }
+  }, [product, loading, location]);
 
   return (
     <>
